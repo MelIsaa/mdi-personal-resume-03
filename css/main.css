@@ -1,0 +1,472 @@
+/* Custom Font */
+@font-face {
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+}
+body {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* NAVIGATION */
+nav, .navbar {
+  padding: 0;
+}
+
+nav {
+  z-index: 100;
+  position: absolute;
+  top: -100px;
+}
+nav ul {
+  margin-left: 50px;
+}
+
+nav ul li {
+  height: 100%;
+  padding: 15px;
+  border-right: 1px solid #ccc;
+}
+nav ul li:first-of-type {
+  border-left: 1px solid #ccc;
+}
+
+/* HOME */
+#home, #skills, #portfolio, #education, #experience, #contact {
+  height: 100vh;
+}
+
+#home {
+  top: 0px;
+  background: url("../images/laptopGlasses01web01.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+#home h1 {
+  position: absolute;
+  left: 44.5%;
+  top: 30%;
+  font-size: 8em;
+}
+#home h2 {
+  position: absolute;
+  left: 31%;
+  top: 35%;
+  font-size: 4em;
+}
+#home #questions {
+  position: absolute;
+  left: 70%;
+  top: 10%;
+  font-size: 2em;
+  color: #7082A0;
+}
+
+#home-scrollDown {
+  position: absolute;
+  left: 2%;
+  top: 35%;
+}
+
+/* SKILLS */
+#skills {
+  background-color: #F1F1F1;
+}
+#skills ul {
+  list-style-type: none;
+  width: 15.625em;
+  margin: 0;
+  padding: 0;
+}
+#skills ul li {
+  position: relative;
+  margin-bottom: 0.3125em;
+  text-align: center;
+  color: #fff;
+  background-color: #67686D;
+  border: 1px solid #707070;
+  border-radius: 0.75em;
+}
+#skills ul li:hover {
+  background-color: #7082A0;
+}
+#skills ul#languages li {
+  left: -1000px;
+}
+#skills ul#frameworks li {
+  left: 1000px;
+}
+#skills h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#skills-img {
+  width: 0;
+  height: 0;
+}
+
+/* PORTFOLIO */
+#portfolio nav ul {
+  position: relative;
+  list-style-type: none;
+  top: 160px;
+  left: 41%;
+}
+#portfolio nav ul li {
+  display: inline;
+  border: 0;
+}
+#portfolio .grid {
+  position: relative;
+  top: 100px;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 250px;
+}
+#portfolio .grid-item {
+  position: relative;
+}
+#portfolio .grid-item:hover .over-img {
+  display: block;
+}
+#portfolio .over-img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 240px;
+  padding-top: 20%;
+  background-color: rgba(112, 130, 160, 0.8);
+  color: white;
+  z-index: 5;
+}
+#portfolio .over-img a {
+  color: white;
+}
+#portfolio .over-img a:hover {
+  color: #ccc;
+}
+#portfolio .over-img a:first-of-type {
+  margin-right: 10px;
+}
+
+/* EDUCATION & EXPERIENCE */
+#education ul, #experience ul {
+  position: relative;
+  left: 350px;
+  list-style-type: none;
+  padding: 100px 0;
+  border-left: 1px solid #707070;
+}
+#education ul li, #experience ul li {
+  position: relative;
+  padding-left: 50px;
+  left: 1500px;
+  top: -25px;
+  max-width: 500px;
+  text-align: left;
+  background: url("../images/customListImgSm.png") center left no-repeat;
+}
+#education ul li:hover, #experience ul li:hover {
+  background: url("../images/listItemBulletHoverSm.png") center left no-repeat;
+}
+#education ul .li-heading, #experience ul .li-heading {
+  position: relative;
+  left: -1000px;
+}
+#education ul p, #experience ul p {
+  margin: 0;
+}
+
+/* EXPERIENCE */
+#experience ul {
+  padding: 150px 0;
+  padding-left: 33px;
+}
+#experience ul li {
+  left: 1500px;
+}
+
+/* CONTACT */
+#contact .contact-pic {
+  content: "";
+  background: url("../images/pinkLaptop1200.jpg") center center no-repeat;
+}
+#contact form {
+  margin-top: 35%;
+}
+#contact form textarea {
+  height: 250px;
+}
+
+/* Scrolling */
+.section {
+  background: #fff;
+}
+
+/* COLORS */
+.silver {
+  color: #ccc;
+}
+
+.special-font {
+  font-family: "Quicksand", sans-serif;
+}
+
+.melissa-nav {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -5px;
+}
+
+.melissa-li {
+  width: 12.5em;
+  max-height: 4.375em;
+}
+.melissa-li span {
+  position: relative;
+  top: -0.9375em;
+}
+
+/* MEDIA QUERIES & REACTIVE RESIZING */
+@media only screen and (max-width: 1840px) {
+  /* HOME */
+  #home h2 {
+    left: 30%;
+  }
+}
+@media only screen and (max-width: 1745px) {
+  /* HOME */
+  #home h2 {
+    left: 28%;
+  }
+}
+@media only screen and (max-width: 1540px) {
+  /* HOME */
+  #home h2 {
+    left: 25%;
+  }
+  #home #questions {
+    font-size: 1.625em;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  /* HOME */
+  #home h1 {
+    left: 38%;
+  }
+  #home h2 {
+    left: 18%;
+  }
+}
+@media only screen and (max-width: 1270px) {
+  /* HOME */
+  #home h1 {
+    left: 36%;
+  }
+  #home h2 {
+    left: 16%;
+  }
+  #home #questions {
+    left: 55%;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  /* HOME */
+  #home h2 {
+    left: 12%;
+  }
+}
+@media only screen and (max-width: 1057px) {
+  /* Nav */
+  header nav ul i {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  /* NAVIGATION */
+  .bg-light {
+    background: #F1F1F1 !important;
+  }
+
+  header nav ul {
+    margin-left: 0;
+  }
+  header nav ul li {
+    border-bottom: 1px solid #c4c4c4 !important;
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.233);
+  }
+  header nav ul i {
+    display: inline !important;
+  }
+
+  #navbarNavDropdown {
+    text-align: center;
+  }
+  #navbarNavDropdown li a {
+    color: #666666;
+  }
+  #navbarNavDropdown li a:hover {
+    color: #383838;
+  }
+  #navbarNavDropdown .melissa-li {
+    display: none;
+  }
+  #navbarNavDropdown li:first-of-type {
+    border-left: 0;
+  }
+
+  /* HOME */
+  #home {
+    background: url("../images/laptopGlasses01web01-1992.jpg") bottom center no-repeat;
+  }
+  #home #home-scrollDown {
+    display: none;
+  }
+  #home h1 {
+    left: 25%;
+  }
+  #home h2 {
+    top: 25%;
+    left: 23%;
+  }
+  #home #questions {
+    left: 50%;
+  }
+
+  /* EDUCATION & EXPERIENCE */
+  #education ul, #experience ul {
+    left: 200px;
+  }
+  #education ul .li-heading, #experience ul .li-heading {
+    margin-left: 0px;
+    top: -25px;
+  }
+  #education ul li, #experience ul li {
+    margin-bottom: 20px;
+    max-width: 450px;
+  }
+
+  /* PORTFOLIO */
+  #portfolio nav ul {
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* HOME */
+  #home #questions {
+    left: 40%;
+  }
+
+  /* SKILLS */
+  /* PORTFOLIO */
+  #portfolio nav ul {
+    width: 750px;
+    left: -100px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #portfolio .grid {
+    width: 600px;
+  }
+  #portfolio .grid .grid-item {
+    width: 250px;
+  }
+  #portfolio .grid .grid-item img {
+    width: 250px;
+  }
+  #portfolio .grid .grid-item .over-img {
+    width: 250px;
+    height: 170px;
+    padding-top: 0;
+  }
+  #portfolio .grid .grid-item .over-img p {
+    font-size: 10px;
+  }
+
+  /* EDUCATION & EXPERIENCE */
+  #education ul, #experience ul {
+    left: 0;
+  }
+  #education ul .li-heading, #experience ul .li-heading {
+    margin-left: 0px;
+    top: -25px;
+  }
+  #education ul li, #experience ul li {
+    margin-bottom: 20px;
+  }
+
+  /* EXPERIENCE */
+  #experience ul .li-heading {
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* HOME */
+  #home {
+    background: url("../images/laptopGlasses01web01-576.jpg") bottom center no-repeat;
+  }
+  #home h1 {
+    left: 0;
+  }
+  #home h2 {
+    top: 25%;
+    left: 5%;
+  }
+  #home #questions {
+    left: 27%;
+    top: 10%;
+    font-size: 1.5em;
+  }
+
+  /* SKILLS */
+  #skills #frameworks, #skills #languages, #skills #skills-middle {
+    padding: 50px 0;
+  }
+  #skills #frameworks {
+    padding-bottom: 150px;
+  }
+
+  /* PORTFOLIO */
+  #portfolio nav ul {
+    width: 550px;
+    left: -50px;
+  }
+  #portfolio .grid {
+    width: 550px;
+    margin-bottom: 150px;
+  }
+  #portfolio .grid .grid-item {
+    width: 400px;
+  }
+  #portfolio .grid .grid-item img {
+    width: 400px;
+  }
+  #portfolio .grid .grid-item .over-img {
+    width: 400px;
+    height: 240px;
+    padding-top: 15%;
+  }
+  #portfolio .grid .grid-item .over-img p {
+    font-size: 1em;
+  }
+
+  /* EDUCATION & EXPERIENCE */
+  #education ul, #experience ul {
+    left: 0;
+  }
+  #education ul .li-heading, #experience ul .li-heading {
+    margin-left: 0px;
+    top: -25px;
+  }
+  #education ul li, #experience ul li {
+    margin-bottom: 20px;
+  }
+
+  /* CONTACT */
+  #contact form {
+    margin-top: 15px;
+    max-width: 90%;
+  }
+}
